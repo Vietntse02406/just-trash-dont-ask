@@ -1,0 +1,11 @@
+Excel 101:
+=CONCATENATE("<renameTable  newTableName=""",Table2[@[Tên bảng mới ]],""" oldTableName=""", Table2[@[Tên bảng cũ ]], """ schemaName=""public""/>")
+
+
+change set 101:
+tạo change set -> file renameTable.xml
+<changeSet  author="GHI TEN VAO DAY"  id="TIMESTAMP DANG yyyyMMddHHmmss">
+  <renameTable newTableName="TEN BANG MOI 1" oldTableName="TEN BANG CU 1" schemaName="TEN SCHEMA"/>
+  <renameTable newTableName="TEN BANG MOI 2" oldTableName="TEN BANG CU 2" schemaName="TEN SCHEMA"/>
+  ....
+</changeSet>
